@@ -10,7 +10,7 @@ Created on Tue Aug 25 11:38:28 2026
 import numpy as np
 
 # input parameter 
-u_pH = 2864.0 #estimated shock particle shock velocity of MgO (Hugoniot)
+u_pH = 2864.0 #estimated shock particle shock velocity of MgO (Hugoniot). Adjust u_pH until u_int_calc ~ u_int
 rho0= 3560  #MgO initial density
 gamma = 1.5# Gruneisen parameter for MgO 
 
