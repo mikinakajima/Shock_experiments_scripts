@@ -32,7 +32,7 @@ P_int = rho0_LiF * U_LiF * u_int
 
 
 rho_int = rho_H * np.exp((P_int - P_H)/K_S) # density of MgO at the interface. rough estimate - needs a better model
-T_int = T_H * (rho_int/rho_H) # temperature of MgO at the interface
+T_int = T_H * (rho_int/rho_H)**gamma # temperature of MgO at the interface
 
 # this calculates the interface particle velocity. Adjust u_pH until u_int_calc ~ u_int
 u_int_calc = u_pH + 2.0/(gamma-1.0) *np.sqrt(gamma*P_H/rho_H)*(1-(P_int/P_H)**((gamma-1.0)/(2.0*gamma)))
