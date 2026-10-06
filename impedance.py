@@ -36,5 +36,5 @@ T_int = T_H * (rho_int/rho_H)**gamma # temperature of MgO at the interface
 
 # this calculates the interface particle velocity. Adjust u_pH until u_int_calc ~ u_int
 #u_int_calc = u_pH + 2.0/(gamma-1.0) *np.sqrt(gamma*P_H/rho_H)*(1-(P_int/P_H)**((gamma-1.0)/(2.0*gamma)))
-u_int_calc = u_pH + 2.0*np.sqrt(K_s/rho_H)*(np.sqrt(rho_H/rho_int)-1.0)
+u_int_calc = u_pH + 2.0*np.sqrt(K_S/rho_H)*(np.sqrt(rho_H/rho_int)-1.0)
 print('calculated particle velocity (m/s) at the interface =', u_int, 'input particle velocity =', u_int_calc, 'interface temperature=', T_int, 'Hugoniot temperature=',T_H)
